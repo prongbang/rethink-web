@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+
+  rethink-frontend-prod:
+    container_name: rethink-frontend-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
